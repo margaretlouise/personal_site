@@ -242,7 +242,7 @@ li.info-description {
 	}
 	
 	ul.mobile-menu {
-		padding-top: 2rem;
+		padding: 0 2rem;
 	  list-style-type: none;
 		font-size: 1.25rem;
 		color: white;
@@ -271,6 +271,7 @@ li.info-description {
 	}
 
 	.contact-header {
+		margin-left: 4rem;
 		margin-bottom: 2rem;
 	}
 
