@@ -1,16 +1,20 @@
+/* ---------------------------- */
+/*  MARGS COOL STYLE SHEET WITH */
+/* LOTS OF ROOM FOR IMPROVEMENT */
+/* ---------------------------- */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+	margin: 0;
 	font-family: sans-serif;
-	max-width: 1440px; 
-  margin: 0 auto !important; 
-  float: none !important; 
+	max-width: 1440px;
 }
 
 h1 {
-	margin: 0 4rem;
+	margin: 0;
 	text-transform: uppercase;
 	font-size: 8rem;
 	text-align: center;
@@ -25,7 +29,19 @@ img {
 }
 
 svg {
-  display: flex;
+  display: block;
+}
+
+/* ---------------------- */
+/* HEADER AND MENU STYLES */
+/* ---------------------- */
+
+.wave-1 {
+	color: #fff;
+	background-color: #ff6b35;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
 }
 
 .menu-items {
@@ -40,27 +56,22 @@ svg {
 	fill: #99d4ff;
 }
 
+/* ---------------------------------------------- */
+/* WAVE STYLES APPLICABLE TO ALL SUBSEQUENT WAVES */
+/* ---------------------------------------------- */
+
+.inner-waves {
+	max-width: 875px;
+	padding: 3rem;
+}
+
 .wave-headers {
 	font-size: 3.85rem;
 }
 
-.simple-header, .contact-header {
-	fill: #fff;
-	color: #fff;
-}
-
-.waves {
-	position: relative;
-	overflow: hidden;
-}
-
-.inner-waves {
-	margin: 0 5rem;
-	max-width: 875px;
-}
-
-.inner-waves img {
+.main-photo {
 	float: left;
+	margin-right: 2rem;
 }
 
 .inner-waves p {
@@ -72,17 +83,41 @@ svg {
 	margin-top: 1rem;
 }
 
-.wave-1 {
-	color: #fff;
-	background-color: #ff6b35;
-	text-align: center;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-}
+/* ---------------------------------------------- */
+/* JUST COLORS FOR THE WAVES AND OR WAVE HEADERS  */
+/* ---------------------------------------------- */
 
 .wave-2 {
 	background-color: #f7c59f;
 }
+
+.wave-3 {
+	background-color: #efefd0;	
+}
+
+.wave-4 {
+	background-color: #c9e8ff;	
+}
+
+.wave-5 {
+	background-color: #0d97ff;	
+}
+
+.simple-header, .contact-header {
+	fill: #fff;
+	color: #fff;
+}
+
+/* padding here is temporary until i finish */
+/* the real content for this section :))))) */
+.projects-body {
+	color: #fff;
+	padding-bottom: 17rem;
+}
+
+/* ------------------------ */
+/* FABULOUS UNORDERED LISTS */
+/* ------------------------ */
 
 ul.info-blurbs {
 	list-style-type: none;
@@ -105,39 +140,17 @@ li.info-description {
 	font-size: 1rem;
 }
 
-.wave-3 {
-	padding-top: 5rem;
-	background-color: #efefd0;	
-}
-
-.wave-4 {
-	padding-top: 4rem;
-	background-color: #c9e8ff;	
-}
-
-.projects-body {
-	color: #fff;
-	padding-bottom: 17rem;
-}
-
-.wave-5 {
-	padding-top: 4rem;
-	background-color: #0d97ff;	
-}
+/* ------------- */
+/* FOOTER STYLES */
+/* ------------- */
 
 .footer-wave {
 	background-color: #657153;	
-	padding-bottom: 1rem;
+	color: #fff;
 }
 
 .footer-wave p {
-	margin-left: 1rem;
-	color: #fff;
-	justify-content: center;
-}
-
-.footer-footer {
-	text-align: center;
+	margin: 0 4rem;
 }
 
 .footer-icons {
@@ -145,16 +158,29 @@ li.info-description {
 	margin: 0rem 0rem 5rem 3rem;
 }
 
+.footer-icons a {
+	text-decoration: none;
+}
+
 .footer-icon {
 	margin: 1rem;
 	border-radius: 0;
 }
 
-.main-photo {
-	margin-right: 2rem;
+.footer-footer {
+	text-align: center;
+	padding-bottom: 1rem;
+	margin: 0;
 }
 
-/* bigger screens */
+/* --------------------------------- */
+/* STYLES FOR DIFFERENT SCREEN SIZES */
+/* --------------------------------- */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ----------------------------- */
+/* FOR ANY SCREEN BESIDES MOBILE */
+/* ----------------------------- */
+
 @media (min-width: 480px) {
 	.mobile-menu {
 		display: none;
@@ -165,19 +191,24 @@ li.info-description {
 	}
 }
 
+/* ------------------------------------------------------- */
+/* WHEN SOMEONE ON A 13" LAPTOP STARTS RESIZING THE WINDOW */
+/* AND IT'S NOT QUITE AS SMALL AS AN IPAD BUT IT'S CLOSE.  */
+/* ------------------------------------------------------- */
+
 @media (max-width: 1030px) {
 	h1 {
 		font-size: 5rem;
 		margin: 0 3rem;
 	}	
 	
+	.inner-waves {
+		max-width: 560px;
+	}
+
 	.inner-waves img {
 		float: none;
 		margin-bottom: 2rem;
-	}
-	
-	.inner-waves div {
-		max-width: 500px;
 	}
 	
 	.projects-body {
@@ -196,14 +227,10 @@ li.info-description {
 	}
 }
 
-@media (max-width: 750px) {
-	h1 {
-		font-size: 3rem;
-		margin: 0 3rem;
-	}
-}
+/* ------------------ */
+/* FOR MOBILE DEVICES */
+/* ------------------ */
 
-/* smaller screens */
 @media (max-width: 480px) {
 	.menu-items {
 		display: none;
@@ -241,6 +268,10 @@ li.info-description {
 	.mobile-wave-headers {
 		margin-left: 5rem;
 		font-size: 1rem;
+	}
+
+	.contact-header {
+		margin-bottom: 2rem;
 	}
 
 	.wave-1 {
