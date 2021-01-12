@@ -74,6 +74,7 @@ svg {
 .main-photo {
 	float: left;
 	margin-right: 2rem;
+	margin-bottom: 8rem;
 }
 
 .inner-waves p {
@@ -114,7 +115,7 @@ svg {
 /* the real content for this section :))))) */
 .projects-body {
 	color: #fff;
-	padding-bottom: 17rem;
+	padding-bottom: 20rem;
 }
 
 /* ------------------------ */
