@@ -25,6 +25,7 @@ h1 {
 
 h2, h3 {
 	margin: 0;
+	font-weight: bolder;
 }
 
 img {
@@ -75,16 +76,16 @@ svg {
 .main-photo {
 	float: left;
 	margin-right: 2rem;
-	margin-bottom: 8rem;
+	margin-bottom: 20rem;
 }
 
 .inner-waves p {
-	display: inline;
 	font-size: 1.25rem;
+	margin-top: 1rem;
 }
 
 .inner-waves div {
-	margin-top: 1rem;
+	margin-top: 3rem;
 }
 
 /* ---------------------------------------------- */
@@ -116,7 +117,7 @@ svg {
 /* the real content for this section :))))) */
 .projects-body {
 	color: #fff;
-	padding-bottom: 20rem;
+	padding-bottom: 30rem;
 }
 
 /* ------------------------ */
