@@ -37,6 +37,7 @@ svg {
 /* ------------------- */
 
 .exp-btn {
+	font-size: 1rem;
 	font-family: 'Poppins', sans-serif;
 	border: none;
 	width: 100%;
@@ -130,7 +131,7 @@ svg {
 }
 
 .experience-menu {
-	width: 280px;
+	width: 315px;
 	float: left;
 	padding: 0 2rem 2rem 0;
 }
@@ -330,7 +331,7 @@ li.info-description {
 	}
 
 	.experience-menu {
-		width: 280px;
+		width: 315px;
 		float: left;
 	}
 	
