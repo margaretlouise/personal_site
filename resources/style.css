@@ -40,7 +40,7 @@ svg {
 	font-family: 'Poppins', sans-serif;
 	border: none;
 	width: 100%;
-	padding: 1rem;
+	padding: 1.12rem;
 	background: none;
 	display: block;
 	border-left: 5px solid #fff;
@@ -104,24 +104,43 @@ svg {
 }
 
 .inner-waves {
-	display: flex;
-	width: 100%;
+	padding: 2rem;
+}
+
+.inner-waves:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .main-photo {
-	flex: 1;
+	width: 280px;
+	padding-right: 2rem;
+	float: left;
 }
 
 .main-body {
-	flex: 2;
+	width: 50%;
+	float: left;
 }
 
 .secondary-body {
-	flex: 3;
+	width: 100%;
+	float: left;
+}
+
+.experience-menu {
+	width: 280px;
+	float: left;
+	padding: 0 2rem 2rem 0;
+}
+
+.experience-body {
+	width: 500px;
+	float: left;
 }
 
 .main-photo img {
-	width: 280px;
 	border-radius: 1rem;
 }
 
@@ -294,11 +313,6 @@ li.info-description {
 		list-style-type: none;
 		margin: 1rem 0 0 0;
 	}
-	
-	ul.info-blurbs-resume {
-		padding: 0;
-		margin: 1rem 0 0 0;
-	}
 }
 
 /* ------------------------------ */
@@ -308,7 +322,22 @@ li.info-description {
 @media (max-width: 730px) {
 	.projects-column {
     width: 94%;
-  }
+	}
+	
+	.main-body {
+		width: 100%;
+		float: left;
+	}
+
+	.experience-menu {
+		width: 280px;
+		float: left;
+	}
+	
+	.experience-body {
+		width: 100%;
+		float: left;
+	}
 }
 
 /* ------------------ */
