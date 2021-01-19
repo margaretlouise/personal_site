@@ -10,6 +10,7 @@ var intEngDiv = document.getElementById('int-eng-blurb');
 var custOpsDiv = document.getElementById('cust-ops-blurb');
 var ceoDiv = document.getElementById('ceo-blurb');
 
+// lol. this is gonna be get better i promise.
 eng2Btn.onclick = function() {
   eng2Btn.setAttribute('class', 'exp-btn active');
   eng1Btn.setAttribute('class', 'exp-btn');
