@@ -58,10 +58,33 @@ svg {
 	outline:0;
 }
 
-.active {
+.exp-btn-active {
 	border-left: 5px solid #54b6ff;
 	background-color: #94d1ff;
 	font-weight: bolder;
+}
+
+.exp-2-btn {
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	width: 47.4%;
+	float: left;
+	padding: .7rem;
+	background: none;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 2rem;	
+	margin: .3rem;
+}
+
+.exp-2-btn:focus {
+	outline:0;
+}
+
+.exp-2-btn-active {
+	background-color: #53c271;
 }
 
 .hidden {
@@ -114,10 +137,19 @@ svg {
 	clear: both;
 }
 
+.inner-waves p {
+	font-size: 1.25rem;
+	margin-top: 1rem;
+}
+
 .main-photo {
 	width: 280px;
 	padding: 0 2rem 2rem 0;
 	float: left;
+}
+
+.main-photo img {
+	border-radius: 1rem;
 }
 
 .main-body {
@@ -130,25 +162,37 @@ svg {
 	float: left;
 }
 
+.experience-body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .experience-menu {
-	width: 315px;
-	float: left;
+	min-width: 290px;
 	padding: 0 2rem 2rem 0;
 }
 
-.experience-body {
-	width: 500px;
+.experience-content {
+	flex: 1;
+	max-width: 750px;
+}
+
+.experience-copy {
 	float: left;
+	margin: 1rem 0 0 1rem;
 }
 
-.main-photo img {
-	border-radius: 1rem;
+.experience-copy p {
+	font-size: 1rem;
 }
 
-.inner-waves p {
-	font-size: 1.25rem;
-	margin-top: 1rem;
+.experience-secondary-menu {
+	min-width: 380px;
+	background-color: #fff;
+	float: left;
+	border-radius: 2rem;
 }
+
 
 /* ---------------------------------------------- */
 /* JUST COLORS FOR THE WAVES AND OR WAVE HEADERS  */
@@ -300,16 +344,6 @@ li.info-description {
 		float: left;
 	}
 
-	.experience-menu {
-		width: 325px;
-		float: left;
-	}
-	
-	.experience-body {
-		width: 100%;
-		float: left;
-	}
-
 	.projects-item {
 		flex: 100%;
 	}
@@ -371,5 +405,10 @@ li.info-description {
 		text-align: center;
 		padding-top: 3em;
 		padding-bottom: 2em;
+	}
+
+	.exp-2-btn {
+		padding: .2rem;
+		width: 47.3%;
 	}
 }

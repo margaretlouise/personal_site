@@ -169,59 +169,251 @@
           <h2>Experience</h2>
         </div>
         <div class="inner-waves">
-
-          <div class="main-photo">
-            <img src="resources/img/conference-room.JPG">
-          </div>
-
-          <div class="experience-menu">
-            <button type="button" class="exp-btn active" id="eng-2-button">Frontend Engineer II</button>
-            <button type="button" class="exp-btn" id="eng-1-button">Frontend Engineer I</button>
-            <button type="button" class="exp-btn" id="int-eng-button">Internal Engineer (Full Stack)</button>
-            <button type="button" class="exp-btn" id="cust-ops-button">Customer Support Agent</button>
-            <button type="button" class="exp-btn" id="ceo-button">Chief Executive Officer (CEO, lol)</button>
-          </div>
-
           <div class="experience-body">
-            <div class="visible" id="eng-2-blurb">
-              <ul class="info-blurbs">
-                <li class="info-title">Frontend Engineer II</li>
-                <li class="info-description">Sept 2017 - Present</li>
-                <li class="info-subtitle">Simple Finance Technology Corp</li>
-              </ul>
+
+            <div class="main-photo">
+              <img src="resources/img/conference-room.JPG">
             </div>
-  
-            <div class="hidden" id="eng-1-blurb">
-              <ul class="info-blurbs">
-                <li class="info-title">Frontend Engineer I</li>
-                <li class="info-description">Jan 2016 - Sept 2017</li>
-                <li class="info-subtitle">Simple Finance Technology Corp</li>
-              </ul>
+
+            <div class="experience-menu">
+              <button type="button" class="exp-btn exp-btn-active" id="eng-2-button">Frontend Engineer II</button>
+              <button type="button" class="exp-btn" id="eng-1-button">Frontend Engineer I</button>
+              <button type="button" class="exp-btn" id="int-eng-button">Internal Engineer (Full Stack)</button>
+              <button type="button" class="exp-btn" id="cust-ops-button">Customer Support Agent</button>
+              <button type="button" class="exp-btn" id="ceo-button">Chief Executive Officer (CEO, lol)</button>
             </div>
-  
-            <div class="hidden" id="int-eng-blurb">
-              <ul class="info-blurbs">
-                <li class="info-title">Internal Engineer (Full Stack)</li>
-                <li class="info-description">Sep 2014 - Dec 2015</li>
-                <li class="info-subtitle">Simple Finance Technology Corp</li>
-              </ul>
+    
+            <div class="experience-content">
+              <div class="experience-secondary-menu">
+                <button type="button" class="exp-2-btn exp-2-btn-active" id="short-story-button">The Short Story</button>
+                <button type="button" class="exp-2-btn" id="long-story-button">The Truly Long Story</button>
+              </div>
+
+              <div class="experience-copy">
+                <div class="visible" id="eng-2-blurb">
+                  <ul class="info-blurbs">
+                    <li class="info-title">Frontend Engineer II</li>
+                    <li class="info-description">Sept 2017 - Present</li>
+                    <li class="info-subtitle">Simple Finance Technology Corp</li>
+                  </ul>
+    
+                  <div class="visible" id="eng-2-short-story">
+                    <p>
+                      Exciting new context coming VERY SOON!! Check back.
+                    </p>
+                  </div>
+    
+                  <div class="hidden" id="eng-2-long-story">
+                    <p>
+                      Exciting new context coming VERY SOON!! Check back.
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="experience-copy">
+                <div class="hidden" id="eng-1-blurb">
+                  <ul class="info-blurbs">
+                    <li class="info-title">Frontend Engineer I</li>
+                    <li class="info-description">Jan 2016 - Sept 2017</li>
+                    <li class="info-subtitle">Simple Finance Technology Corp</li>
+                  </ul>
+
+                  <div class="hidden" id="eng-1-short-story">
+                    <p>
+                      Exciting new context coming VERY SOON!! Check back.
+                    </p>
+                  </div>
+
+                  <div class="hidden" id="eng-1-long-story">
+                    <p>
+                      Exciting new context coming VERY SOON!! Check back.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience-copy">
+                <div class="hidden" id="int-eng-blurb">
+                  <ul class="info-blurbs">
+                    <li class="info-title">Internal Engineer (Full Stack)</li>
+                    <li class="info-description">Sep 2014 - Dec 2015</li>
+                    <li class="info-subtitle">Simple Finance Technology Corp</li>
+                  </ul>
+
+                  <div class="hidden" id="int-eng-short-story">
+                    <p>
+                      I got to cut my teeth in software development working on the internal tools at Simple.
+                      This gave me a chance to work on the full stack - a colossal Ruby on Rails app with
+                      every JavaScript framework you can think of (including one you probably didn’t think
+                      of, because it was our custom framework - Butcher). I kept in close contact with my
+                      friends from Customer Support to help guide my work, and utilized this tight feedback
+                      loop to iterate quickly. We typically worked without product or design guidance, but had
+                      to build out support in our internal apps for any new customer facing feature. 
+                    </p>
+                  </div>
+
+                  <div class="hidden" id="int-eng-long-story">
+                    <p>
+                      It was a very proud day for me when I accepted a job offer to join the engineering team at
+                      Simple. I joined the department as a Ruby on Rails developer for the Internal Engineering
+                      team. Throughout this time, I stayed in close contact with all my pals on the engineering
+                      side - and these relationships helped us stay in a short feedback loop. 
+                    </p>
+
+                    <p>
+                      Working on internal tools was challenging and rewarding for the same reasons - your
+                      customers are in the same room as you. When we shipped a slick new feature, we quickly saw
+                      the impacts and heard the positive reviews from across the room. And when we screwed 
+                      something up, it was our friends who hurt because of it. Ultimately, though, I think this
+                      was my favorite part about working on internal tools. We learned what worked and what didn’t
+                      quickly, and we could also iterate quickly. We didn’t have our own product manager, so it was
+                      often just the three of us engineers making decisions about what to build next and how it
+                      should work. There wasn’t a lot of overhead, and it was fun to experiment.
+                    </p>
+
+                    <p>
+                      One of my favorite projects was redesigning and rebuilding the flow after customer contact
+                      where an agent would categorize the topic and leave notes about the call or chat. It was this
+                      data that I had used when I was an agent to make product requests and suggestions for our
+                      customers. I knew this data was really powerful, and was what the support team could leverage
+                      to help our customers be heard inside the company. I was happy to have a chance to update the
+                      flow so that we could gather data in a more precise and detailed way.
+                    </p>
+
+                    <p>
+                      I learned and grew a ton in this role. I was writing a lot of Javascript, in a lot of different
+                      frameworks - Mootools, JQuery, Butcher (a Javascript framework built in house), vanilla JS,
+                      Bootstrap for most of our styles, and Ruby on Rails to interact with our data. When the decision
+                      was made to dissolve the Internal tools team and to support these products from the other existing
+                      functional teams at the company, I made the decision to focus on Frontend development, but I would
+                      miss the full stack life!
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="experience-copy">
+                <div class="hidden" id="cust-ops-blurb">
+                  <ul class="info-blurbs">
+                    <li class="info-title">Customer Support Agent</li>
+                    <li class="info-description">Mar 2013 - Sep 2014</li>
+                    <li class="info-subtitle">Simple Finance Technology Corp</li>
+                  </ul>
+
+                  <div class="hidden" id="cust-ops-short-story">
+                    <p>
+                      After joining Simple’s customer support team, I was quickly hitting the top end of our
+                      production goals for the number of cases handled per day. More importantly, I loved the
+                      challenge brought on by each call or chat, and I loved helping to find solutions for
+                      every customer I interacted with. I was a regular contributor to our Product repo,
+                      documenting feature ideas or updates based on my interactions with customers. I leveraged
+                      my background in Sociology to analyze large sets of contact data to support these proposals.
+                    </p>
+                  </div>
+
+                  <div class="hidden" id="cust-ops-long-story">
+                    <p>
+                      I discovered Simple a few months after I graduated college. I was eager to find a job in
+                      tech and I was actively teaching myself to code on the side. I applied for a Simple bank
+                      account as enthusiastically as I applied for a job with them. Everything about it felt really
+                      promising - they had a great product that I needed (badly) to help me get a grip on my
+                      finances, they had open roles in customer support (a job I was well qualified for and excited
+                      about doing), and I knew they supported women who wanted to learn to code (as I’d seen they
+                      hosted a Women Who Hack day).
+                    </p>
+                    <p>
+                      To my complete delight, I got the job! And I loved it. I loved figuring out how to build
+                      rapport with each customer I talked to - getting to know them a little bit, and also doing
+                      everything in my power to resolve their issue. I initially found phone support to be nerve
+                      wracking, but I later found it exhilarating - thinking on my toes and finding solutions to
+                      whatever problems the customers threw my way.
+                    </p>
+                    <p>
+                      I was also an active participant in product discussions - documenting customer contact,
+                      articulating clearly the problems they faced, and making suggestions for how we might
+                      improve them. When we rolled out customer to customer transfers, we were developing a
+                      roll out plan and ran into a roadblock when we realized people with early access might
+                      want to transfer to people who didn’t have access yet. I suggested we start by rolling
+                      out to a small group and then give feature access to anyone those users attempted to add
+                      as contacts. And that’s how we rolled it out.
+                    </p>
+                    <p>
+                      One of the things I was most impressed with when I started my job at Simple was that the
+                      support software we used was built in house. Belvedere. There were two engineers working
+                      on the app, and we saw quick and routine updates as needed. It looked really nice (Bootstrap,
+                      I later learned) and it was tailored to our specific needs. I never expected that the internal
+                      apps would be as user friendly as our customer facing products. The best part was that the
+                      engineers working on Belvedere sat 20 feet away, and so I started pestering them with requests.
+                      The two of them started a “Code Club” after work to teach any interested employees, and after
+                      a few weeks, I was the only one still showing up. This turned into an opportunity for me to
+                      work with them on the clock, on the same requests I had been pestering them with! It was the
+                      best! I was closely connected with the support team, and with the job myself, and I knew how
+                      we could improve efficiency through updates to Belvedere. 
+                    </p>
+                    <p>
+                      The first thing I added to Belvedere while I was still working as an agent was a button at the
+                      very top of a customer profile that copied their user ID to your clipboard, an idea that came
+                      from another agent, and an update that saved us all time and clicks on every call and for every
+                      chat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="experience-copy">
+                <div class="hidden" id="ceo-blurb">
+                  <ul class="info-blurbs">
+                    <li class="info-title">Chief Executive Officer (CEO, lol)</li>
+                    <li class="info-description">September 2012- Spring 2013</li>
+                    <li class="info-subtitle">Kokonect, LLC</li>
+                    <a href="https://www.youtube.com/watch?v=FizH11ewlt8" target="_blank">
+                      Check out our Promo Video 
+                    </a>🤘🏼🤘🏼🤘🏼
+                  </ul>
+
+                  <div class="hidden" id="ceo-short-story">
+                    <p>
+                      I led a five person team through Lewis & Clark’s first annual Venture Competition to
+                      the final round. We designed, built, and tested a platform that encouraged students
+                      to share resources on campus. We formalized ourselves as an LLC and registered a 
+                      Trademark. In parallel with that work, our team was hired to build the campus digital 
+                      wayfinding system. 
+                    </p>
+                  </div>
+
+                  <div class="hidden" id="ceo-long-story">
+                    <p>
+                      What started as a group project in a Cyborg Anthropology class turned into a team effort
+                      in Lewis & Clark’s first ever Venture Competition. I led the five person team as CEO (I
+                      cringe at this now, but we had to walk the walk!) and we pitched and built a product
+                      called Kokonect - a tool that would help connect students to valuable resources on campus.
+                      This was a time in the tech world when the Share Economy was a major buzzword, and we
+                      were exploring what that could look like on college campuses.
+                    </p>
+                    <p>
+                      We got funding through the competition, and were subsequently also hired by the school to
+                      build their online wayfinding/campus mapping system. We had two sources of funding - we
+                      were on top of the world. With the money, we hired contractors to build both projects -
+                      a web app that allowed anyone with a Lewis & Clark email address to create an account,
+                      post offers or requests, and view a feed of resources other students wanted to share or
+                      were looking for. We also built an interactive campus map and an admin UI to update the
+                      map and all points of data on it. 
+                    </p>
+                    <p>
+                      Additionally, we formalized ourselves as an LLC, and filed a Trademark. Ultimately the
+                      mapping project became a higher priority because we had real, paying clients (good call),
+                      but unfortunately we ran Kokonect into the ground when we couldn’t support both projects.
+                      Devastating! I learned an incredible amount in those 6 or so months, and was also teaching
+                      myself to code on the side (with hopes I could maintain Kokonect myself) when I saw a Women
+                      Who Hack event on Portland’s tech events calendar hosted by a company I hadn't previously
+                      heard of: Simple.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-  
-            <div class="hidden" id="cust-ops-blurb">
-              <ul class="info-blurbs">
-                <li class="info-title">Customer Support Agent</li>
-                <li class="info-description">Mar 2013 - Sep 2014</li>
-                <li class="info-subtitle">Simple Finance Technology Corp</li>
-              </ul>
-            </div>
-  
-            <div class="hidden" id="ceo-blurb">
-              <ul class="info-blurbs">
-                <li class="info-title">Chief Executive Officer (CEO, lol)</li>
-                <li class="info-description">September 2012- Spring 2013</li>
-                <li class="info-subtitle">Kokonect, LLC</li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -256,25 +448,17 @@
                   for different reorder reasons based on compliance requirements.
                 </p>
               </div>
+
               <div class="projects-item">
-                <h2>Customer Education, Contact Reduction</h2>
+                <h2>Live Chat</h2>
                 <img class="projects-gif" src="resources/gifs/CardReorder.gif">
               </div>
+              
               <div class="projects-item">
                 <h2>Certificates of Deposit</h2>
-                <img class="projects-gif" src="resources/gifs/CardReorder.gif">
+                <img class="projects-gif" src="resources/gifs/CD.gif">
               </div>
-              <div class="projects-item">
-                <h2>Paper Checks</h2>
-                <img class="projects-gif" src="resources/gifs/CardReorder.gif">
-              </div>
-              <div class="projects-item">
-                <h2>Welcome States</h2>
-                <img class="projects-gif" src="resources/gifs/CardReorder.gif">
-                <p>
-                  Welcome State redesign
-                </p>
-              </div>
+              
               <div class="projects-item">
                 <h2>Kitties Image Upload - </h2>
                 <img class="projects-gif" src="resources/gifs/CardReorder.gif">
@@ -282,6 +466,7 @@
                   Idology Integration
                 </p>
               </div>
+
               <div class="projects-item">
                 <h2>Onboarding Funding experiment</h2>
                 <img class="projects-gif" src="resources/gifs/CardReorder.gif">
@@ -289,17 +474,20 @@
                   Plaid Integration
                 </p>
               </div>
+
               <div class="projects-item">
-                <h2>Goals Game - March 2018</h2>
+                <h2>Goals Game</h2>
                 <img class="projects-gif" src="resources/gifs/GoalsGame.gif">
                 <p>
                   Presented as part of an Engineering Hackweek
                 </p>
               </div>
+
               <div class="projects-item">
                 <h2>Belvedere Cards</h2>
                 <img class="projects-gif" src="resources/gifs/Cards.gif">
               </div>
+
               <div class="projects-item">
                 <h2>Belvedere Inquiries</h2>
                 <img class="projects-gif" src="resources/gifs/Inquiries.gif">
