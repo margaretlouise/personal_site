@@ -415,6 +415,11 @@ li.info-description {
 		padding-bottom: 2em;
 	}
 
+	.experience-menu {
+		min-width: 100%;
+		padding: 0 0 2rem 0;
+	}
+
 	.exp-2-btn {
 		padding: .2rem;
 		width: 47.3%;

@@ -23,8 +23,25 @@ var custOpsLongStoryCopy = document.getElementById('cust-ops-long-story');
 var ceoShortStoryCopy = document.getElementById('ceo-short-story');
 var ceoLongStoryCopy = document.getElementById('ceo-long-story');
 
+longStoryBtn.onclick = function() {
+  if (eng2ShortStoryCopy.hasAttribute('class', 'visible')) {
+    longStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
+    shortStoryBtn.setAttribute('class', 'exp-2-btn');
+    eng2ShortStoryCopy.setAttribute('class', 'hidden');
+    eng2LongStoryCopy.setAttribute('class', 'visible');
+  }
+}
+
+shortStoryBtn.onclick = function() {
+  if (eng2LongStoryCopy.hasAttribute('class', 'visible')) {
+    longStoryBtn.setAttribute('class', 'exp-2-btn');
+    shortStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
+    eng2ShortStoryCopy.setAttribute('class', 'visible');
+    eng2LongStoryCopy.setAttribute('class', 'hidden');
+  }
+}
+
 // lol. this is gonna be get better i promise.
-// also the short story long story buttons are broken kind of
 eng2Btn.onclick = function() {
   eng2Btn.setAttribute('class', 'exp-btn exp-btn-active');
   eng1Btn.setAttribute('class', 'exp-btn');
@@ -36,7 +53,6 @@ eng2Btn.onclick = function() {
   intEngDiv.setAttribute('class', 'hidden');
   custOpsDiv.setAttribute('class', 'hidden');
   ceoDiv.setAttribute('class', 'hidden');
-  eng2ShortStoryCopy.setAttribute('class', 'visible');
 
   longStoryBtn.onclick = function() {
     longStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
@@ -64,6 +80,8 @@ eng1Btn.onclick = function() {
   intEngDiv.setAttribute('class', 'hidden');
   custOpsDiv.setAttribute('class', 'hidden');
   ceoDiv.setAttribute('class', 'hidden');
+  longStoryBtn.setAttribute('class', 'exp-2-btn');
+  shortStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
   eng1ShortStoryCopy.setAttribute('class', 'visible');
 
   longStoryBtn.onclick = function() {
@@ -92,6 +110,8 @@ intEngBtn.onclick = function() {
   intEngDiv.setAttribute('class', 'visible');
   custOpsDiv.setAttribute('class', 'hidden');
   ceoDiv.setAttribute('class', 'hidden');
+  longStoryBtn.setAttribute('class', 'exp-2-btn');
+  shortStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
   intEngShortStoryCopy.setAttribute('class', 'visible');
 
   longStoryBtn.onclick = function() {
@@ -120,6 +140,8 @@ custOpsBtn.onclick = function() {
   intEngDiv.setAttribute('class', 'hidden');
   custOpsDiv.setAttribute('class', 'visible');
   ceoDiv.setAttribute('class', 'hidden');
+  longStoryBtn.setAttribute('class', 'exp-2-btn');
+  shortStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
   custOpsShortStoryCopy.setAttribute('class', 'visible');
 
   longStoryBtn.onclick = function() {
@@ -148,6 +170,8 @@ ceoBtn.onclick = function() {
   intEngDiv.setAttribute('class', 'hidden');
   custOpsDiv.setAttribute('class', 'hidden');
   ceoDiv.setAttribute('class', 'visible');
+  longStoryBtn.setAttribute('class', 'exp-2-btn');
+  shortStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
   ceoShortStoryCopy.setAttribute('class', 'visible');
 
   longStoryBtn.onclick = function() {
