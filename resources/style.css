@@ -87,6 +87,14 @@ svg {
 	background-color: #53c271;
 }
 
+#short-story-button {
+	width: 145px;
+}
+
+#long-story-button {
+	width: 180px;
+}
+
 .hidden {
 	display: none;
 }
@@ -168,7 +176,7 @@ svg {
 }
 
 .experience-menu {
-	min-width: 290px;
+	min-width: 315px;
 	padding: 0 2rem 2rem 0;
 }
 
@@ -187,7 +195,7 @@ svg {
 }
 
 .experience-secondary-menu {
-	min-width: 380px;
+	min-width: 344px;
 	background-color: #fff;
 	float: left;
 	border-radius: 2rem;
@@ -410,5 +418,17 @@ li.info-description {
 	.exp-2-btn {
 		padding: .2rem;
 		width: 47.3%;
+	}
+
+	.experience-secondary-menu {
+		min-width: 329px;
+	}
+
+	#short-story-button {
+		width: 135px;
+	}
+	
+	#long-story-button {
+		width: 175px;
 	}
 }
