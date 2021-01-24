@@ -19,6 +19,9 @@
     <meta name="twitter:title" content="MLA | My Very Cool Website" />
     <meta name="twitter:description" content="The premiere place on the internet to go if you want to learn about Margaret Adams" />
     <meta name="twitter:image" content="https://margaretadams.dev/resources/img/twitter-card.png" />
+    <!-- freezeframe -->
+    <link rel="stylesheet" href="https://unpkg.com/freezeframe@3.0.10/build/css/freezeframe_styles.min.css">
+    <script type="text/javascript" src="https://unpkg.com/freezeframe@3.0.10/build/js/freezeframe.pkgd.min.js"></script>
   </head>
 
   <body>
@@ -72,7 +75,7 @@
             </p>
             <p>
               With a background in Sociology and Cyborg Anthropology, I have a
-              keen eye for opportunities that will improve <strong> human-computer
+              keen eye for opportunities that can *enhance* <strong> human-computer
               interaction</strong>. Providing customer service early in my career
               got me where I am today: highly empathetic to users and the teams
               that serve them. 
@@ -565,8 +568,8 @@
 
             <div class="projects-container">
               <div id="project-1" class="projects-item visible">
-                <h2>Self Service Card Reorder</h2>
-                <img class="freezeframe projects-gif" src="resources/gifs/CardReorder.gif">
+                <h2 class="projects-header">Self Service Card Reorder</h2>
+                <img class="freezeframe freezeframe-responsive projects-gif" src="resources/gifs/CardReorder.gif">
                 <p>
                   Led a small team to enhance a customer self service card order flow. Documented
                   proposals for Backend support for each new type of card reorder, built various
@@ -576,8 +579,8 @@
               </div>
 
               <div id="project-2" class="projects-item visible">
-                <h2>Salesforce Embedded Live Chat</h2>
-                <img class="projects-gif" src="resources/gifs/LiveChat.gif">
+                <h2 class="projects-header">Salesforce Embedded Live Chat</h2>
+                <img class="freezeframe freezeframe-responsive projects-gif" src="resources/gifs/LiveChat.gif">
                 <p>
                   Integrated SalesForce embedded Live Chat into our customer facing web app. Worked
                   with SalesForce engineers and Security team to ship a pilot of the service for web
@@ -586,8 +589,8 @@
               </div>
                         
               <div id="project-3" class="projects-item hidden">
-                <h2>Certificates of Deposit</h2>
-                <img class="projects-gif" src="resources/gifs/CD.gif">
+                <h2 class="projects-header">Certificates of Deposit</h2>
+                <img id="gif-3" class="projects-gif" src="resources/gifs/CD.gif">
                 <p>
                   Built out the application flow to create a Certificates of Deposit with validation
                   and error handling. Hit several backend APIs to show available interest rates and
@@ -596,7 +599,7 @@
               </div>
 
               <div id="project-4" class="projects-item hidden">
-                <h2>Onboarding Funding Experiment</h2>
+                <h2 class="projects-header">Onboarding Funding Experiment</h2>
                 <img class="projects-gif" src="resources/gifs/FirstRun.gif">
                 <p>
                   Experimented with a variety of funding options to drive customer initial deposits,
@@ -607,7 +610,7 @@
               </div>
               
               <div id="project-5" class="projects-item hidden">
-                <h2>Application Image Upload</h2>
+                <h2 class="projects-header">Application Image Upload</h2>
                 <img class="projects-gif" src="resources/gifs/Kitties.gif">
                 <p>
                   Various updates to customer application flow. Rebuilt the document upload form in the
@@ -617,7 +620,7 @@
               </div>
 
               <div id="project-6" class="projects-item hidden">
-                <h2>Goals Game</h2>
+                <h2 class="projects-header">Goals Game</h2>
                 <img class="projects-gif" src="resources/gifs/GoalsGame.gif">
                 <p>
                   Built an interactive Choose Your Own Adventure style game that gave customers the
@@ -628,7 +631,7 @@
               </div>
 
               <div id="project-7" class="projects-item hidden">
-                <h2>Belvedere Inquiries</h2>
+                <h2 class="projects-header">Belvedere Inquiries</h2>
                 <img class="projects-gif" src="resources/gifs/Inquiries.gif">
                 <p>
                   Overall goal of making it easier to learn from customer contact by giving agents better
@@ -639,7 +642,7 @@
               </div>
 
               <div id="project-8" class="projects-item hidden">
-                <h2>Belvedere Cards</h2>
+                <h2 class="projects-header">Belvedere Cards</h2>
                 <img class="projects-gif" src="resources/gifs/Cards.gif">
                 <p>
                   Provided agents with customer card information that was easy to understand at a glance.
@@ -695,8 +698,6 @@
 
       <!-- lil bebe javascript -->
       <script type="text/javascript" src="resources/script.js"></script>
-      <!-- freeze the gifs -->
-      <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
     </footer>
   </body>
 </html>
