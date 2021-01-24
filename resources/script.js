@@ -23,6 +23,50 @@ var custOpsLongStoryCopy = document.getElementById('cust-ops-long-story');
 var ceoShortStoryCopy = document.getElementById('ceo-short-story');
 var ceoLongStoryCopy = document.getElementById('ceo-long-story');
 
+var showMeMoreBtn1 = document.getElementById('show-me-more-1');
+var showMeMoreBtn2 = document.getElementById('show-me-more-2');
+var showMeMoreBtn3 = document.getElementById('show-me-more-3');
+var project1 = document.getElementById('project-1');
+var project2 = document.getElementById('project-2');
+var project3 = document.getElementById('project-3');
+var project4 = document.getElementById('project-4');
+var project5 = document.getElementById('project-5');
+var project6 = document.getElementById('project-6');
+var project7 = document.getElementById('project-7');
+var project8 = document.getElementById('project-8');
+
+showMeMoreBtn1.onclick = function() {
+  if (project1.hasAttribute('class', 'visible') && project2.hasAttribute('class', 'visible')) {
+    if (project3.hasAttribute('class', 'hidden') && project4.hasAttribute('class', 'hidden')) {
+      project3.setAttribute('class', 'projects-item visible');
+      project4.setAttribute('class', 'projects-item visible');
+      showMeMoreBtn1.setAttribute('class', 'hidden');
+      showMeMoreBtn2.setAttribute('class', 'more-projects-btn visible');
+    }
+  } 
+}
+
+showMeMoreBtn2.onclick = function() {
+  if (project3.hasAttribute('class', 'visible') && project4.hasAttribute('class', 'visible')) {
+    if (project5.hasAttribute('class', 'hidden') && project6.hasAttribute('class', 'hidden')) {
+      project5.setAttribute('class', 'projects-item visible');
+      project6.setAttribute('class', 'projects-item visible');
+      showMeMoreBtn2.setAttribute('class', 'hidden');
+      showMeMoreBtn3.setAttribute('class', 'more-projects-btn visible');
+    }
+  } 
+}
+
+showMeMoreBtn3.onclick = function() {
+  if (project5.hasAttribute('class', 'visible') && project6.hasAttribute('class', 'visible')) {
+    if (project7.hasAttribute('class', 'hidden') && project8.hasAttribute('class', 'hidden')) {
+      project7.setAttribute('class', 'projects-item visible');
+      project8.setAttribute('class', 'projects-item visible');
+      showMeMoreBtn3.setAttribute('class', 'hidden');
+    }
+  } 
+}
+
 longStoryBtn.onclick = function() {
   if (eng2ShortStoryCopy.hasAttribute('class', 'visible')) {
     longStoryBtn.setAttribute('class', 'exp-2-btn exp-2-btn-active');
