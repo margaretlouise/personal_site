@@ -1,7 +1,3 @@
-$(function() {
-  ff = new freezeframe().freeze();
-})
-
 var eng2Btn = document.getElementById('eng-2-button');
 var eng1Btn = document.getElementById('eng-1-button');
 var intEngBtn = document.getElementById('int-eng-button');
