@@ -176,12 +176,13 @@ svg {
 }
 
 .main-photo {
-	width: 280px;
-	padding: 0 2rem 2rem 0;
 	float: left;
+	padding-right: 2rem;
 }
 
 .main-photo img {
+	max-width: 100%;
+	height: auto;
 	border-radius: 1rem;
 }
 
@@ -380,6 +381,7 @@ li.info-description {
 	.main-body {
 		width: 100%;
 		float: left;
+		padding-top: 2rem;
 	}
 
 	.projects-item {
@@ -403,7 +405,7 @@ li.info-description {
 	
 	ul.mobile-menu {
 		padding: 0 2rem;
-	  list-style-type: none;
+	  	list-style-type: none;
 		font-size: 1.25rem;
 		color: white;
 	}
@@ -439,6 +441,10 @@ li.info-description {
 		margin-bottom: 2rem;
 	}
 
+	.inner-waves p {
+		font-size: 1rem;
+	}
+
 	.wave-1 {
 		text-align: center;
 		padding-top: 3em;
@@ -447,7 +453,12 @@ li.info-description {
 
 	.experience-menu {
 		min-width: 100%;
-		padding: 0 0 2rem 0;
+		padding: 2rem 0 2rem 0;
+	}
+
+	.experience-copy {
+		float: left;
+		margin: 1rem 0 0 0;
 	}
 
 	.exp-2-btn {
@@ -456,14 +467,62 @@ li.info-description {
 	}
 
 	.experience-secondary-menu {
-		min-width: 329px;
+		min-width: 100%;
 	}
 
 	#short-story-button {
-		width: 135px;
+		width: 41%;
+		font-size: .9rem;
 	}
-	
+
 	#long-story-button {
-		width: 175px;
+		width: 51%;
+		font-size: .9rem;
 	}
+}
+
+/* ------------------ */
+/* FOR TINY MOBILE DEVICES */
+/* ------------------ */
+
+@media (max-width: 350px) {
+	.mobile-wave-headers {
+		margin-left: 3rem;
+	}
+
+	.inner-waves {
+		padding: 1rem;
+	}
+
+	.experience-content {
+		max-width: 100%;
+	}
+
+	.experience-copy {
+		float: left;
+		margin: 1rem 0 0 0;
+	}
+
+	.simple-logo {
+		max-width: 88%;
+		padding: 1rem;
+	}
+
+	.projects-item {
+		padding: 1rem;
+	}
+
+	#long-story-button {
+		width: 51%;
+	}
+
+	.footer-wave p {
+		margin: 0 2rem;
+		font-size: .9rem;
+	}
+
+	.footer-icons {
+		margin: 0rem 0rem 5rem .6rem;
+	}
+
 }
