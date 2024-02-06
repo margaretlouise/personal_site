@@ -38,26 +38,13 @@ var project5 = document.getElementById("project-5")
 var project6 = document.getElementById("project-6")
 var project7 = document.getElementById("project-7")
 var project8 = document.getElementById("project-8")
+var project9 = document.getElementById("project-9")
+var project10 = document.getElementById("project-10")
 
 showMeMoreBtn1.onclick = function () {
   if (
     project1.hasAttribute("class", "visible") &&
-    project2.hasAttribute("class", "visible")
-  ) {
-    if (
-      project3.hasAttribute("class", "hidden") &&
-      project4.hasAttribute("class", "hidden")
-    ) {
-      project3.setAttribute("class", "projects-item visible")
-      project4.setAttribute("class", "projects-item visible")
-      showMeMoreBtn1.setAttribute("class", "hidden")
-      showMeMoreBtn2.setAttribute("class", "more-projects-btn visible")
-    }
-  }
-}
-
-showMeMoreBtn2.onclick = function () {
-  if (
+    project2.hasAttribute("class", "visible") &&
     project3.hasAttribute("class", "visible") &&
     project4.hasAttribute("class", "visible")
   ) {
@@ -67,13 +54,13 @@ showMeMoreBtn2.onclick = function () {
     ) {
       project5.setAttribute("class", "projects-item visible")
       project6.setAttribute("class", "projects-item visible")
-      showMeMoreBtn2.setAttribute("class", "hidden")
-      showMeMoreBtn3.setAttribute("class", "more-projects-btn visible")
+      showMeMoreBtn1.setAttribute("class", "hidden")
+      showMeMoreBtn2.setAttribute("class", "more-projects-btn visible")
     }
   }
 }
 
-showMeMoreBtn3.onclick = function () {
+showMeMoreBtn2.onclick = function () {
   if (
     project5.hasAttribute("class", "visible") &&
     project6.hasAttribute("class", "visible")
@@ -84,6 +71,23 @@ showMeMoreBtn3.onclick = function () {
     ) {
       project7.setAttribute("class", "projects-item visible")
       project8.setAttribute("class", "projects-item visible")
+      showMeMoreBtn2.setAttribute("class", "hidden")
+      showMeMoreBtn3.setAttribute("class", "more-projects-btn visible")
+    }
+  }
+}
+
+showMeMoreBtn3.onclick = function () {
+  if (
+    project7.hasAttribute("class", "visible") &&
+    project8.hasAttribute("class", "visible")
+  ) {
+    if (
+      project9.hasAttribute("class", "hidden") &&
+      project10.hasAttribute("class", "hidden")
+    ) {
+      project9.setAttribute("class", "projects-item visible")
+      project10.setAttribute("class", "projects-item visible")
       showMeMoreBtn3.setAttribute("class", "hidden")
     }
   }
